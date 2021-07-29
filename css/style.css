@@ -1,0 +1,100 @@
+/** 
+font-family: 'Rubik', sans-serif;
+
+font-family: 'Teko', sans-serif;
+**/
+
+/*CSS global, fix lỗi unknow Element trên trình duyệt chưa cập nhật*/
+header, section, footer, aside, nav, main,article, figure{
+    display: block;
+}
+/*Trang web sát vìa và apply cho toàn bộ web*/
+body{
+    margin:0%;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(../img/background.png);
+}
+/* Sử dụng 1 rem bằng 20px khai báo trên thẻ html*/
+html{
+    font-size: 20px;
+}
+header{
+    background-image: url(../img/background.png);
+    margin: 0%;
+}
+.class{
+    clear: both;
+}
+/*Padding total*/
+.padding__style{
+    width: 90%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #3d2514;
+}
+/*---------------------HEADER CSS---------------*/
+.header-logo{
+    justify-content: space-between;
+    display: flex;
+}
+.header-logo1, .header-logo2{
+    display: flex;
+    align-items: center;
+}
+.header-logo1 {
+    padding-top: 3%;
+}
+.header-logo1 p {
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    word-spacing: 0.3rem;
+    color: #3d2514;
+}
+.header-logo1 img {
+    width: 65px;
+}
+.header-logo2 {
+    padding-top: 1.3rem;
+}
+.header-logo2 img {
+    width: 38px;
+}
+.header-logo2 p {
+    padding-left: 0.7rem;
+    font-weight: bolder;
+    color: #3d2514;
+}
+
+nav {
+    margin-top: -2%;
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+    float: right;
+    margin-right: 3.5rem;
+}
+nav ul li :hover{
+    color: white;
+}
+nav ul li a {
+    font-weight: 900;
+}
+/*---------------------CAROSEL CSS---------------*/
+
+.carosel__{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.carosel__content{
+    align-items: center;
+}
+
+.carosel__picture img{
+    width: 200px;
+    height: auto;
+}
