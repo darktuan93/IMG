@@ -16,85 +16,125 @@ body{
     background-image: url(../img/background.png);
 }
 /* Sử dụng 1 rem bằng 20px khai báo trên thẻ html*/
+*{
+    box-sizing: border-box;
+}
 html{
     font-size: 20px;
 }
-header{
-    background-image: url(../img/background.png);
-    margin: 0%;
-}
-.class{
-    clear: both;
-}
-/*Padding total*/
-.padding__style{
+.padding-style{
     width: 90%;
     margin: auto;
 }
 a{
     text-decoration: none;
-    color: #3d2514;
 }
-/*---------------------HEADER CSS---------------*/
-.header-logo{
-    justify-content: space-between;
-    display: flex;
+header{
+    background-image: url(../img/background.png);
+    margin: 0%;
 }
-.header-logo1, .header-logo2{
+/*Header and Menu*/
+section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 110px 350px 250px;
+}
+.header-form{   
+    border: 1px solid blue;
+    padding: 0%;
+}
+.items1{
+    grid-column: 1/span 3;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-.header-logo1 {
-    padding-top: 3%;
+.items1 img{
+    width: 75px;
+    
 }
-.header-logo1 p {
-    padding-left: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    word-spacing: 0.3rem;
-    color: #3d2514;
+.items1 p{
+    font-size: 1.7rem;
+    color: #3c2514;
+    
 }
-.header-logo1 img {
-    width: 65px;
+.items2{
+    grid-column: 4/span 9;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
 }
-.header-logo2 {
-    padding-top: 1.3rem;
+.items2 img{
+    width: 45px;
+    transform: translate(-12px, -2px);
 }
-.header-logo2 img {
-    width: 38px;
-}
-.header-logo2 p {
-    padding-left: 0.7rem;
-    font-weight: bolder;
-    color: #3d2514;
-}
+.logo2{
 
-nav {
-    margin-top: -2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.2rem;
+    word-spacing: 0.3rem;
 }
 nav ul li {
     display: inline;
-    list-style: none;
     float: right;
-    margin-right: 3.5rem;
-}
-nav ul li :hover{
-    color: white;
+    padding-left: 2.3rem;
+    margin-top: -1.2rem;
 }
 nav ul li a {
-    font-weight: 900;
+    font-size: 1.2rem;
+    color: #3c2514;
 }
-/*---------------------CAROSEL CSS---------------*/
-
-.carosel__{
+.items3{
+    grid-area: 2/1/ span 2/ span 4;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
 }
-.carosel__content{
+.text1,.text2,.text3{
+    color: #3c2514;
+    display: flex;
+    text-align: center;
+}
+.text1{
+    align-items: flex-end;
+    margin: -7%;
+    padding-left: 2.3rem;
+}
+.text1 p {
+    font-size: 0.7rem;
+    border: 2px dashed #3c2514;
+    padding:0.5rem;
+}
+.text2 p {
+    font-size: 5.9rem;
+    margin: 0%;
+}
+.text3 p {
+    align-items: flex-end;
+    font-size: 3.9rem;
+    margin: -4.0rem;
+    padding-left: 4.3rem;
+    
+}
+
+.items4{
+    grid-area: 2/5/ span 2/ span 9;
+}
+.img1 {
+    width: 10rem;
+    height: 16rem;
+}
+.img2 {
+    width: 6rem;
+    height: 18rem;
+}
+
+.img3{
+    width: 370px;
+    height: 340px;
+}
+.form-items4{
+    display: flex;
     align-items: center;
 }
-
-.carosel__picture img{
-    width: 200px;
-    height: auto;
-}
+/**/
